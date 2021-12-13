@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Open Sans', sans-serif;
+    --ff-secondary: 'Roboto', sans-serif;
+    --fw-reg: 400;
+    --fw-bold: 700;
+
+    --clr-orange: #FF9225;
+    --clr-black: #303030;
+    --clr-blue: #2592FF;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/* General */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--clr-orange);
+    color: var(--clr-black);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height:1.5;
+}
+
+.bg {
+    background-color: var(--clr-blue);
+    display: inline-block;
+    padding: .5em;
+    margin-bottom: .5em;
+}
+
+section {
+    padding: 6em 3em;
+    text-align: center;
+}
+
+.sectionTitle {
+    text-align: center;
+    margin:0;
+}
+
+.sectionSubtitle {
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    section {
+        display:grid;
+        margin: 0 auto;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(1fr, 3);
+        grid-template-areas:
+            "intro-img"
+            "section-title"
+            "section-subtitle"
+            ;
+    }
+
+    .intro-img {
+        grid-area: intro-img;
+    }
+
+    .sectionSubtitle {
+        grid-area: section-subtitle;
+    }
+
+    .sectionTitle {
+        grid-area: section-title;
+    }
+}
+/* General */
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.nav {
+    position: fixed;
+}
+
+ul.collapsed{
+    display:none;
+    justify-content: space-between;
+    color:#222;
+    text-decoration: none;
+}
+
+ul.is-expanded{
+    display:block;
+    overflow: hidden;
+    max-height: 500px;
+    text-decoration: none;
+}
+
+/* Header */
+
+/* Introduction */
+
+.introductionSection {
+    background-color: var(--clr-black);
+}
+
+.intro-img {
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.sectionTitleIntro {
+    color: var(--clr-black);
+}
+
+.sectionSubtitleIntro {
+    color: var(--clr-blue)
+}
+/* Introduction */
+ /* Services */
+
+
+
+
+
+
+ /* Services */
+
+ /* About Me */
+
+.aboutMeSection {
+    background-color: var(--clr-black);
+}
+
+.sectionSubtitleAboutMe {
+    color: var(--clr-blue);
+}
+
+ /* About Me */
+
+ /* Footer */
+
+.footerSection {
+    background-color: var(--clr-black);
+}
+
+.sectionTitleFooter {
+    color: var(--clr-black);
+}
+
+.sectionSubtitleFooter {
+    color: var(--clr-blue)
+}
+
+.footerIcon {
+    color:var(--clr-blue);
+}
+ /* Footer */
