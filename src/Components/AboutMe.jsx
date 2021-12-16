@@ -4,11 +4,9 @@ export const AboutMe = () => {
     return(
         <section className="section aboutMeSection" id="aboutMe">
             <div className="bg">
-                <h1 className="sectionTitle sectionTitleAboutMe">About Me</h1>
+                <h1 className="sectionTitle sectionTitleAboutMe">Hello, I'm Zachary Fisher. Nice to meet you!</h1>
             </div>
-            <h2 className="sectionSubtitle sectionSubtitleAboutMe">Welcome to my website</h2>
-            <p className="aboutContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloremque voluptate saepe ea, nulla dicta illum dolorem reiciendis ut magni velit doloribus, impedit obcaecati cum ipsam tempora repellat ab praesentium.</p>
-            <img  alt="" className="intro-img"/>
+            <p className="aboutContent">Even though I've just started my web development journey, I've quickly realized that this is my new passion. I'm excited to continue learning more, and to find new oppurtunities for myself!</p>
         </section>
     )
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../images/zachnewnew.png'
 
 export const Header = () => {
@@ -10,17 +11,17 @@ export const Header = () => {
     return (
         <>
             <header id="home">
-                <div className="logo">
-                    <img src={Logo} alt="" />
+                <div>
+                    <img src={Logo} alt="" className="logo" />
                 </div>
-                <button onClick={handleClick} className="btn"></button>
+                <button onClick={handleClick} className="btn"><FontAwesomeIcon icon={faBars} className="bars"/></button>
                 <nav className="nav">
-                    <ul className={`collapsed ${open === true ? "is-expanded" : ""}`}>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#aboutMe">About Me</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#footer">Footer</a></li>
+                    <ul className={`header-list collapsed${open === true ? "is-expanded" : ""}`}>
+                        <li className="flex-list"><a href="#home">Home</a></li>
+                        <li className="flex-list"><a href="#aboutMe">About Me</a></li>
+                        <li className="flex-list"><a href="#skills">Skills</a></li>
+                        <li className="flex-list"><a href="#projects">Projects</a></li>
+                        <li className="flex-list"><a href="#footer">Links</a></li>
                     </ul>
                 </nav>
             </header>

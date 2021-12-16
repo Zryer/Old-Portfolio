@@ -1,6 +1,6 @@
 import React from 'react';
 import { Introduction } from './Components/Introduction';
-import { Services } from './Components/Services';
+import { Skills } from './Components/Skills';
 import { AboutMe } from './Components/AboutMe';
 import { Projects } from './Components/Projects';
 import { Header } from './Components/Header';
@@ -12,8 +12,8 @@ const App = () => {
         <div>
             <Header />
             <Introduction />
-            <Services />
             <AboutMe />
+            <Skills />
             <Projects />
             <Footer />
         </div>
